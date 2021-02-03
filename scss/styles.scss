@@ -356,6 +356,22 @@ footer {
     overflow: hidden;
 }
 
+#my-image-div{
+    display: block;
+    width: auto;
+    height: auto;
+    vertical-align: top;
+    margin-bottom: 15px;
+}
+
+#my-image{
+    padding: 5px;
+    border: 1px solid #f2f3f3;
+    max-width: 175px;
+    border-radius: 50%;
+    width: 100%;
+}
+
 #lead-content {
     position: absolute;
     z-index: 10;
@@ -393,7 +409,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba($base-color-hover, 0.8);
+    background: rgba(47, 47, 47, 0.32);
     z-index: 1;
 }
 
@@ -404,24 +420,26 @@ footer {
     width: 100%;
     text-align: center;
     z-index: 10;
-    bottom: 15px;
+    bottom: 30px;
     color: #fff;
 
     span {
         cursor: pointer;
         display: block;
         margin: 0 auto;
-        width: 35px;
-        height: 35px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
-        border: 3px solid lighten($base-color, 25%);
+        border: 5px solid #01ffd0;
         text-align:center;
+        color: #00fff3;
     }
 
     i {
         animation: pulsate 1.5s ease;
         animation-iteration-count: infinite;
-        padding-top: 5px;;
+        padding-top: 10px;
+        padding-left: 0.4px;
     }
 }
 
@@ -431,7 +449,7 @@ footer {
     }
 
     50% {
-        transform: scale(1.2, 1.2);
+        transform: scale(1.8, 1.8);
     }
 
     100% {
